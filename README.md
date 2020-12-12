@@ -1,1 +1,1 @@
-https://ubaida985.github.io/Portfolio/
+https://ubaida985.github.io/portfolio/
