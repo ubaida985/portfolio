@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ubaid Ahmad} \\ \vspace{1pt}
+    \small +91 8176-940-866 $|$ \href{mailto:ubaida985@gmail.com}{\underline{ubaida985@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ubaida985/}{\underline{linkedin.com/in/ubaida985/}} $|$
+    \href{https://github.com/ubaida985}{\underline{github.com/ubaid}} $|$
+    \href{https://ubaida985.github.io/portfolio/}{\underline{/ubaid}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+       {Java Developer}{March 2022 -- April 2022}
+       {KeepKoding}{Kolkata, West Bengal}
+       \resumeItemListStart
+         \resumeItem{Writing efficient Java codes of to contribute to the data-set of the codes present across the website}
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {Website Developer}{September 2021 -- February 2022}
+      { ConnectSys Pvt Ltd.}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed a website using HTML, SASS, JavaScript and Bootstrap along with other utilities like FormSubmit, owlCarousel and Jquery etc to let people discover their services, sign up or start a career in logistics.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+       {Contributor/Participant}{June 2021 -- August 2021}
+       {Summer of Code}{Let's Grow More}
+       \resumeItemListStart
+         \resumeItem{Contributed to a project called Counsello-An AI based counselor} 
+         \resumeItem{Created it’s frontend as per the requested design using HTML, CSS, JavaScript and its libraries}
+     \resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+     
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Poke Messenger} $|$ \emph{Java, XML, Android, Firebase, Firestore, Retrofit}}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack android application using FCM serving as API, XML for frontend and Java to create the various functionalities}
+            \resumeItem{Used firestore to store the database of the users, including their login details, chat history and basic data}
+            \resumeItem{Used firebase cloud messaging to let users chat with each other seamlessly}
+            \resumeItem{Used retrofit and intuit for better looking frontend}
+          \resumeItemListEnd 
+          
+          \resumeProjectHeading
+          {\textbf{Shopie E-Commerce} $|$ \emph{HTML, SASS, JavaScript, PHP, mySQL}}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using HTML, SASS and JavaScript libraries for frontend, mySQL as database and PHP to connect the two.}
+            \resumeItem{Used Xampp to host the mysql database, including their login details, wishlist, and cart items}
+            \resumeItem{Used phpmyadmin to manage the data easily}
+            \resumeItem{Used SASS to write better CSS}
+            \resumeItem{Used owlCarousel, fontawesome, isotope and other utilities to help with the development}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Acharya Institute of Technology}{Bangalore, Karnataka, India}
+{Bachelor of Engineering in Computer Science}{August. 2019 -- Present}
+\resumeSubheading
+{City Montessori School}{Lucknow, UP, India}
+{Matriculate and Intermediate}{April. 2006 -- March 2018}
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------	
+
+\section{Awards and Honours}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Winner of Lakshya De-Code } }{2022 }
+          \resumeItemListStart
+            \resumeItem{Developed the frontend of the website which will soon be the official website of Lakshya - A Computer Science Department Forum}
+            \resumeItem{Used JavaScript's animate on scroll(AOS) library to give the website a better UI and UX}
+            \resumeItem{Used Owl Carousel to help with the development of various sliders}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Third Prize in Crack the Code} }{2017}
+          \resumeItemListStart
+            \resumeItem{Bagged third place in the inter school competition to debug given code in C/C++/Java language.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------	
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C/C++, SQL(MySql), JavaScript, HTML, CSS, SASS, php} \\
+     \textbf{Frameworks}{: Express, SpringBoot, Bootstrap} \\
+     \textbf{Platforms}{: SDK(Android)} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, Android Studio} \\
+     \textbf{Database}{: MySQL, Firestore, MongoDB } \\
+     \textbf{Libraries}{: React, Jquery, Animate on Scroll }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
