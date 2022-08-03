@@ -396,7 +396,7 @@ section .title::before {
 .history .title::after {
     color: #eee;
     background-color: var(--themeLight);
-    content: "where I have worked";
+    content: "my history";
 }
 
 .history .content {
@@ -859,8 +859,9 @@ footer #social-media-footer ul li:hover a .fa-github {
         z-index: 999;
     }
 
-    .container {
-        width: 80%;
+    .history .container {
+        width: 100%;
+        padding-left: 1rem;
     }
 
     .menu-btn i.active:before {
