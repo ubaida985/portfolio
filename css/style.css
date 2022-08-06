@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: #000;
+}
+
 .callToAction {
     width: 60%;
     margin: auto;
