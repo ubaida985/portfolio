@@ -359,22 +359,6 @@ section .title::after {
 
 /* Dropdown styled like a button */
 
-.history-filter select {
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    border: 2px solid var(--themeDark);
-    background: var(--themeDark);
-    color: var(--white);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.history-filter select:hover {
-    background: var(--white);
-    color: var(--themeDark);
-}
-
 .experience-group {
     display: none;
 }
@@ -383,43 +367,83 @@ section .title::after {
     display: block;
 }
 
-.history-filter {
+
+/* Center wrapper across all screen sizes */
+
+.history-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    /* centers it under the title */
+    width: 100%;
     margin-bottom: 1.5rem;
-    text-align: left;
 }
+
+
+/* Filter itself */
+
+.history-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+/* Label */
 
 .history-filter label {
-    margin-right: 0.5rem;
-    font-weight: bold;
-    color: var(--white);
-}
-
-.history-filter select {
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    border: 2px solid var(--themeDark);
-    background: var(--themeDark);
+    font-weight: 600;
     color: var(--white);
     font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Dropdown styles */
+
+.history-filter select {
+    padding: 0.9rem 2.5rem 0.9rem 1.5rem;
+    /* more padding, esp. right side */
+    border-radius: 999px;
+    overflow: hidden;
+    /* pill */
+    background: var(--white);
+    color: var(--themeLight);
+    font-size: 1.1rem;
+    /* slightly larger text */
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    appearance: none;
+    /* custom arrow */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='white' d='M1.41 0L6 4.58 10.59 0 12 1.41 6 7.41 0 1.41z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.2rem center;
+    /* push arrow a bit right */
+    background-size: 0.9rem auto;
+    /* slightly bigger arrow */
+    text-align: center;
+    justify-content: center;
 }
 
 
 /* Hover effect */
 
 .history-filter select:hover {
-    background: var(--themeLight);
+    background: var(--white);
+    color: var(--themeLight);
     border-color: var(--white);
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.25);
 }
 
 
 /* Focus effect */
 
 .history-filter select:focus {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
     border-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.35);
 }
 
 .history {
@@ -452,7 +476,7 @@ section .title::after {
     background-color: rgba(0, 0, 0, 0.2);
     width: 1rem;
     margin: 4rem 0 0 0;
-    height: 85%;
+    height: 95.5%;
     border-radius: 0.5rem;
 }
 
@@ -868,6 +892,31 @@ section .title::before {
 
 .contact .contact-content .info .sub-title {
     color: #333;
+}
+
+.contact-button {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.contact-button .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--themeDark);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-button .btn:hover {
+    background-color: #444;
+    /* or lighten/darken your theme color */
+    transform: translateY(-2px);
 }
 
 
