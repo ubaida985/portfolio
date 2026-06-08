@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubaid Ahmad portfolio showcasing software engineering experience, Python, AWS, serverless systems, projects, and contact information.">
     <title>Ubaid Ahmad</title>
     <!-- ------------ AOS Library --------------------------->
     <link rel="stylesheet" href="./css/aos.css">
@@ -19,8 +20,7 @@
 
 
     <!-- ------------ FONTAWESOME --------------------------->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
 
@@ -36,6 +36,11 @@
 </head>
 
 <body>
+    <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
     <div data-aos="zoom-in" data-aos-delay="300" class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -48,10 +53,11 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#history" class="menu-btn">Expereince</a></li>
+                <li><a href="#history" class="menu-btn">Experience</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="https://www.github.com/ubaida985">Github</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://www.github.com/ubaida985">Github</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><button id="theme-toggle" class="menu-btn" style="background:none; border:none; color:inherit; cursor:pointer;"><i class="fas fa-moon"></i></button></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -61,16 +67,27 @@
 
     <!-- home section start -->
     <section class="home" id="home" data-aos="zoom-in" data-aos-delay="100">
+        <div class="bg-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
         <div class="max-width">
             <div class="home-content" data-aos="zoom-in-up" data-aos-delay="300">
-                <div class="text-1">
-                    Hello, my name is</div>
-                <div class="text-2">
-                    Ubaid Ahmad</div>
-                <div class="text-3">
-                    And I'm <span class="typing"></span></div>
-                <a href="./res/Ubaid Ahmad(2025).pdf">Download CV</a>
-                <a href="mailto:ubaida985@gmail.com">Contact</a>
+                <div class="column left">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Ubaid Ahmad</div>
+                    <div class="text-3">And I'm <span class="typing"></span></div>
+                    <div class="hero-btns">
+                        <a href="./res/Ubaid_Ahmad.pdf" target="_blank" download="Ubaid_Ahmad_Resume.pdf">Download CV</a>
+                        <a href="mailto:ubaida985@gmail.com" target="_blank">Contact</a>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="hero-img">
+                        <img src="./img/About.jpg" alt="Ubaid Ahmad Profile Photo">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -79,24 +96,19 @@
     <section class="about" id="about" data-aos="zoom-in" data-aos-delay="100">
         <div class="max-width">
             <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left" data-aos="fade-left" data-aos-delay="300">
-                    <img src="./img/About.jpg" alt="">
+            <div class="about-content centered-text">
+                <div class="text">
+                    I'm Ubaid and I'm <span class="typing-2"></span>
                 </div>
-                <div class="column right" data-aos="fade-right" data-aos-delay="300">
-                    <div class="text">
-                        I'm Ubaid and I'm <span class="typing-2"></span>
-                    </div>
-                    <p>
-                        Hello! I’m a Software Engineer working with <b>Python</b> and <b>AWS</b> to build scalable, reliable, and serverless systems.
-                        <br><br> My experience spans across a wide range of AWS services including
-                        <b>CloudFormation</b>, <b>Lambda</b>, <b>Step Functions</b>, <b>DynamoDB</b>,
-                        <b>SQS</b>, <b>EventBridge</b>, <b>MediaConnect</b>, and others. I focus on designing automation workflows, cloud orchestration, and event-driven architectures that keep systems resilient and observable.
-                        <br><br> I enjoy problem solving, writing clean and maintainable code, and continuously learning new cloud-native patterns.
-                        <br><br> Also, if you want to find me on any platform search for: <b>ubaida985</b>
-                    </p>
-                    <a href="./res/Ubaid_Ahmad.pdf">Download CV</a>
-                </div>
+                <p>
+                    Hello! I’m a Software Engineer working with <b>Python</b> and <b>AWS</b> to build scalable, reliable, and serverless systems.
+                    <br><br> My experience spans across a wide range of AWS services including
+                    <b>CloudFormation</b>, <b>Lambda</b>, <b>Step Functions</b>, <b>DynamoDB</b>,
+                    <b>SQS</b>, <b>EventBridge</b>, <b>MediaConnect</b>, and others. I focus on designing automation workflows, cloud orchestration, and event-driven architectures that keep systems resilient and observable.
+                    <br><br> I enjoy problem-solving, writing clean and maintainable code, and continuously learning new cloud-native patterns.
+                    <br><br> Also, if you want to find me on any platform search for: <b>ubaida985</b>
+                </p>
+                <a href="./res/Ubaid_Ahmad.pdf" target="_blank" download="Ubaid_Ahmad_Resume.pdf">Download CV</a>
             </div>
         </div>
     </section>
@@ -112,87 +124,43 @@
                     <br>
                     <p>
                         Over the past few years, I’ve focused on building <b>cloud-native applications</b> and
-                        <b>serverless architectures</b> using <b>AWS</b> and <b>Python</b>. I design <b>orchestration workflows</b>, event-driven systems, and infrastructure automation with services like <b>CloudFormation, Lambda, Step Functions, DynamoDB, SQS, EventBridge,
+                        <b>serverless architectures</b> using <b>AWS</b>, <b>Python</b>, and <b>Rust</b>. I design <b>orchestration workflows</b>, event-driven systems, and infrastructure automation with services like <b>CloudFormation, Lambda, Step Functions, DynamoDB, SQS, EventBridge,
             and MediaConnect</b>.
                         <br><br> I also have experience with <b>TypeScript, REST APIs, CI/CD pipelines</b>, and <b>observability</b> (logging, tracing, monitoring) using tools such as OpenTelemetry and Honeycomb.
                         <br><br> Earlier in my journey, I worked on <b>Java, web development, and Android</b>, and while those skills are not my main focus today, they shaped my foundation as a developer.
                         <br><br> Beyond tech, I enjoy <b>cooking, swimming, and dance</b> — hobbies that keep me creative and balanced.
                     </p>
-                    <br><br>
-                    <a href="#contact">Contact</a>
-                    <a href="./res/Ubaid_Ahmad.pdf">Download CV</a>
                 </div>
 
                 <div class="column right" data-aos="fade-right" data-aos-delay="300">
-                    <!-- Core Current Skills -->
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>90%</span>
+                    <div class="tech-stack-container">
+                        <div class="stack-category">
+                            <h3>Core Stack</h3>
+                            <div class="chips">
+                                <span class="chip">Python</span>
+                                <span class="chip">Rust</span>
+                                <span class="chip">AWS (Lambda, Step Functions, DynamoDB, EventBridge)</span>
+                                <span class="chip">Honeycomb / Observability</span>
+                            </div>
                         </div>
-                        <div class="line python"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>AWS (Lambda, Step Functions, DynamoDB, CloudFormation, etc)</span>
-                            <span>75%</span>
+                        <div class="stack-category">
+                            <h3>Previously Worked With</h3>
+                            <div class="chips">
+                                <span class="chip legacy">Java</span>
+                                <span class="chip legacy">TypeScript</span>
+                                <span class="chip legacy">JavaScript</span>
+                                <span class="chip legacy">SQL</span>
+                                <span class="chip legacy">Android</span>
+                                <span class="chip legacy">HTML/CSS</span>
+                            </div>
                         </div>
-                        <div class="line aws"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>TypeScript / JavaScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line ts"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Observability (OpenTelemetry, Honeycomb)</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line observability"></div>
-                    </div>
-
-                    <!-- Legacy Skills (reduced %) -->
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line java"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Android Development</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line android"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Web Development (HTML, CSS, Bootstrap)</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line web"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>SQL</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line sql"></div>
                     </div>
 
                     <!-- Links -->
-                    <a href="https://www.hackerrank.com/ubaida985">HackerRank</a>
-                    <a href="https://www.codechef.com/users/ubaida985">CodeChef</a>
+                    <div class="skills-links">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.hackerrank.com/ubaida985" class="skill-btn">HackerRank</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.codechef.com/users/ubaida985" class="skill-btn">CodeChef</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,149 +168,103 @@
 
     <!--HISTORY STARTS-->
     <section class="history" id="history" data-aos="zoom-in" data-aos-delay="100">
-        <h2 class="title">My Experience</h2>
-        <!-- Dropdown -->
-        <div class="history-filter-wrapper">
-            <div class="history-filter">
-                <label for="historySelect">View:</label>
-                <select id="historySelect">
-            <option value="work">Work History</option>
-            <option value="education">Education</option>
-            <option value="opensource">Open Source</option>
-        </select>
+        <div class="max-width">
+            <h2 class="title">My Experience</h2>
+            <!-- Tab Navigation -->
+            <div class="history-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="tab-btn active" data-target="work">Work History</button>
+                <button class="tab-btn" data-target="education">Education</button>
+                <button class="tab-btn" data-target="opensource">Open Source</button>
             </div>
-        </div>
-        <div class="container">
-            <div id="experiences">
-
-                <!-- Work -->
+            
+            <div id="experiences-container">
+                <!-- Work History -->
                 <div class="experience-group work active">
-                    <div class="experience workProfile" data-aos="fade-right" data-aos-delay="300">
-                        <div class="titleHeading">
-                            <i class="fas fa-briefcase"></i>
-                            <h2>Work History</h2>
-                        </div>
-                        <!-- your work history contents here -->
-                        <div class="content">
-                            <div class="period">
-                                <p>March 2024 - Present</p>
-                            </div>
+                    <div class="experience-list">
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">May 2026 - Present</div>
                             <div class="description">
                                 <h2>Evertz India</h2>
-                                <h3>Software Developer Engineer - 2</h3>
-                                <p>
-                                    Designing and building large-scale cloud-native systems with <b>Python</b> and <b>AWS</b>. I focus on orchestration workflows, event-driven architectures, and SaaS products that enable media customers like Disney to
-                                    deploy and manage channels reliably.
-                                </p>
-                                <br><br>
+                                <h3>Software Development Engineer III</h3>
+                                <p>Leading the design of cloud-native orchestration systems, focusing on building self-healing architectures and automated recovery workflows for high-scale delivery pipelines. Overcame cloud provider service limits by architecting a resource sharding system, enabling the platform to scale beyond previous bottlenecks while maintaining strict event-driven performance. Standardized system observability across core services using OpenTelemetry and Honeycomb, creating custom triggers and dashboards that slashed incident response times. Driving engineering quality across teams by leading complex code reviews and standardizing CI/CD pipelines, ensuring secure and reliable deployments across multiple environments. Solved critical distributed system race conditions and deployment bugs, improving overall system stability and ensuring 99.9% SLA adherence for global customers.</p>
                             </div>
                         </div>
-
-                        <div class="content">
-                            <div class="period">
-                                <p>September 2023 - March 2024</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">April 2024 - April 2026</div>
                             <div class="description">
                                 <h2>Evertz India</h2>
-                                <h3>Software Developer Engineer - 1</h3>
-                                <p>
-                                    Contributed to SaaS platforms for channel orchestration using <b>AWS Lambda, Step Functions, 
-                    DynamoDB, EventBridge</b> and <b>MediaConnect</b>. Wrote maintainable backend services and automation to improve deployment workflows.
-                                </p>
-                                <br><br>
+                                <h3>Software Development Engineer II</h3>
+                                <p>Led development of the OTT Delivery Orchestration Remediation Service, enabling automated health monitoring, self-healing, and intelligent recovery for live OTT video workflows. Developed and maintained the Dynamic Audio Mixing feature, automatically upmixing/downmixing based on input/output requirements, improving audio flexibility and operator efficiency. Architected and implemented AWS Step Functions workflows for Lambda, EC2, and DynamoDB orchestration, automating deployment, monitoring, and remediation actions. Designed and led AMI build with Packer and GitHub Actions, including testing and validation for OTT delivery stacks. Provided on-call production support via PagerDuty, diagnosing AWS and system-level issues, implementing hotfix scripts, and reducing manual intervention during incidents.</p>
                             </div>
                         </div>
-
-                        <div class="content">
-                            <div class="period">
-                                <p>February 2023 - September 2023</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">August 2023 - April 2024</div>
                             <div class="description">
                                 <h2>Evertz India</h2>
-                                <h3>Student Engineer</h3>
-                                <p>
-                                    Joined as a Student Engineer, working on Python and AWS-based projects. Gained hands-on experience with serverless services and cloud automation, building the foundation for my transition into a full-time developer role.
-                                </p>
-                                <br><br>
+                                <h3>Software Development Engineer I</h3>
+                                <p>Developed redundancy and playout failover mechanisms, achieving 99.9% SLA adherence across deployments. Led multiple feature developments and provided cross-feature support, ensuring timely delivery and implementation quality. Resolved complex corner cases in the blue-green deployment system, improving rollback reliability and reducing failed releases by 100%. Developed reusable automation testing libraries using Pytest and Selenium, reducing test code redundancy and accelerating end-to-end test development for multiple services.</p>
                             </div>
                         </div>
-
-                        <div class="content">
-                            <div class="period">
-                                <p>August 2022-November 2022</p>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">February 2023 - August 2023</div>
+                            <div class="description">
+                                <h2>Evertz India</h2>
+                                <h3>Software Development Engineer Intern</h3>
+                                <p>Optimized serverless workflows to significantly reduce system latency and operational overhead. Improved deployment pipelines by resolving race conditions and implementing more resilient automation patterns.</p>
                             </div>
+                        </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">August 2022 - November 2022</div>
                             <div class="description">
                                 <h2>BotsinRedTech</h2>
                                 <h3>Android Developer</h3>
-                                <p>Develop a Full Stack Android Application platform to enable Bots in Red Tech to provide affordable healthcare products to customers across India.</p>
-                                <br><br>
+                                <p>Developed a full-stack Android application platform to enable Bots in Red Tech to provide affordable healthcare products to customers across India.</p>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>August 2022-August 2022</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">August 2022 - August 2022</div>
                             <div class="description">
                                 <h2>TrulyIAS</h2>
                                 <h3>Android Developer</h3>
-                                <p>Mentor and chair a team of 3 to develop a Full-Stack Android Application to enable TrulyIAS to provide guidance to students across India.</p>
-                                <br><br>
+                                <p>Mentored and chaired a team of 3 to develop a full-stack Android application to enable TrulyIAS to provide guidance to students across India.</p>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>March 2022-April 2022</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">March 2022 - April 2022</div>
                             <div class="description">
                                 <h2>KeepKoding</h2>
                                 <h3>Java Developer</h3>
-                                <p>Writing efficient Java codes of to contribute to the data-set of the codes present across the website.</p>
-                                <br><br>
+                                <p>Wrote efficient Java code to contribute to the data-set of codes present across the website.</p>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>September 2021-February 2022</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">September 2021 - February 2022</div>
                             <div class="description">
                                 <h2>Connectsys LLP</h2>
                                 <h3>Website Developer Intern</h3>
-                                <p>Developed a website using HTML, SASS, JavaScript and Bootstrap along with other utilities like FormSubmit, owlCarousel and Jquery etc to let people discover their services, sign up or start a career in logistics.
-                                </p>
+                                <p>Developed a website using HTML, SASS, JavaScript, and Bootstrap along with other utilities like FormSubmit, owlCarousel, and Jquery to let people discover their services, sign up, or start a career in logistics.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Education -->
                 <div class="experience-group education">
-                    <div class="experience education" data-aos="fade-left" data-aos-delay="300">
-                        <div class="titleHeading">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h2>Education</h2>
-                        </div>
-                        <!-- your education contents here -->
-                        <div class="content">
-                            <div class="period">
-                                <p>August 2019-Present</p>
-                            </div>
+                    <div class="experience-list">
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">August 2019 - June 2023</div>
                             <div class="description">
                                 <h2>Acharya Institute of Technology</h2>
-                                <h3>B.E in Computer Science and Engineering</h3>
-                                <p>currently I am persuing Bachelors of Engineering in Computer Science Engineering at Acharya Institute of Technology, Bangalore. My Current CGPA is 7.7/10</p>
+                                <h3>B.E. in Computer Science and Engineering</h3>
+                                <p>Completed Bachelors of Engineering in Computer Science Engineering. Graduated with a CGPA of 8.2/10.</p>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>April 2015- June 2018</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">April 2015 - June 2018</div>
                             <div class="description">
                                 <h2>City Montessori School</h2>
                                 <h3>Matriculate and Intermediate</h3>
-                                <p>City Montessori School(CISCE), Chowk, Lucknow is my alma matar. I opted for science stream in high school and for PCM with computers in secondary school. My percentage in high school and secondary school was 92% and 95%
-                                    respectively.
-                                </p>
+                                <p>City Montessori School (CISCE), Chowk, Lucknow. Opted for science stream in high school and PCM with computers in secondary school. Achieved 92% and 95% respectively.</p>
                             </div>
                         </div>
                     </div>
@@ -350,115 +272,43 @@
 
                 <!-- Open Source -->
                 <div class="experience-group opensource">
-                    <div class="experience workProfile" data-aos="fade-up" data-aos-delay="300">
-                        <div class="titleHeading">
-                            <i class="fas fa-code"></i>
-                            <h2>Open Source Contributions</h2>
-                        </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>September 2021-February 2022</p>
-                            </div>
+                    <div class="experience-list">
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">September 2021 - February 2022</div>
                             <div class="description">
                                 <h2>Let's Grow More</h2>
                                 <h3>Contributor</h3>
-                                <p>Contributed to a project called Counsello-An AI based counselor. Created it’s frontend as per the requested design using HTML, CSS, JavaScript and its libraries
-                                </p>
+                                <p>Contributed to 'Counsello' (AI-based counselor), creating the frontend using HTML, CSS, and JavaScript libraries.</p>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="period">
-                                <p>September 2021-February 2022</p>
-                            </div>
+                        <div class="experience-card" data-aos="fade-up">
+                            <div class="period">September 2021 - February 2022</div>
                             <div class="description">
-                                <h2>HacktoberFest</h2>
+                                <h2>Hacktoberfest</h2>
                                 <h3>Contributor</h3>
-                                <p>Contributed to various open source projects and successfully got four PR merged.</p>
+                                <p>Contributed to various open source projects and successfully merged four pull requests.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!--HISTORY ENDS-->
 
-    <!--Projects section start -->
+    <!-- Projects section start -->
     <section class="projects" id="projects" data-aos="zoom-in" data-aos-delay="100">
         <div class="max-width">
-            <h2 class="title">
-                Projects</h2>
-            <h2 class="sub-title">
-                Completed Projects</h2>
-            <div class="serv-content">
-
-                <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/Poke_A_Simple_Messenger">
-                        <div class="box">
-                            <div class="card-img">
-                                <img src="./img/androidFirebase.gif" alt="">
-                            </div>
-                            <div class="text">
-                                Poke Messenger</div>
-                            <p>
-                                An android application made using Java and Firebase that let's you chat with other users signed up on the application.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card" data-aos="fade-in" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/News-Application">
-                        <div class="box">
-                            <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                News Application</div>
-                            <p>An android application made using Java and REST API that fetches news of different categories in real time and displays them.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/E-Commerce">
-                        <div class="box">
-                            <div class="card-img">
-                                <img src="./img/fullweb.jpeg" alt="">
-                            </div>
-                            <div class="text">
-                                E-Commerce</div>
-                            <p>
-                                A full stack E-commerce website made using HTML, SASS, JavaScript, php, mySQL along with some JavaScript libraries.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/ODU">
-                        <div class="box">
-                            <div class="card-img">
-                                <img src="./img/research.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                Adverse Effects of Alcohol</div>
-                            <p>
-                                This is a research project which is being done under Old Domain University, Virginia,
-                                US.</p>
-                        </div>
-                    </a>
-                </div> -->
-
-                <div class="more">
-                    <a href="./projects.html">More...</a>
+            <h2 class="title">The Builder's Journey</h2>
+            <div class="projects-narrative" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                    Long before I was architecting orchestration systems at Evertz, I was a student driven by a passion for building. My journey started with experimentation—from Java-based desktop apps to my first Android messengers and full-stack web templates. 
+                    While my focus has since shifted to large-scale cloud-native backend engineering, these early projects represent the foundation of my engineering mindset and my lifelong habit of building from scratch.
+                </p>
+                <div class="archive-btn-container">
+                    <a href="./projects.html" class="skill-btn">View Project Archive</a>
                 </div>
             </div>
-
-            <!-- <h2 class="sub-title"> Ongoing Projects</h2>
-            <div class="serv-content">
-            </div> -->
-        </div>
-
         </div>
     </section>
 
@@ -496,10 +346,28 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Contact Button -->
-                    <div class="contact-button">
-                        <a href="mailto:ubaida985@gmail.com" class="btn">Send me an Email</a>
-                    </div>
+                </div>
+                <div class="column right" data-aos="fade-right" data-aos-delay="300">
+                    <div class="text">Message me</div>
+                    <form action="https://formsubmit.co/ubaida985@gmail.com" method="POST" target="_blank">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -512,73 +380,36 @@
         <div id="social-media-footer" data-aos="zoom-in" data-aos-delay="300">
 
             <ul>
-
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=100040943000469">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com/ubaida985_/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/ubaida985">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/ubaida985">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
-
                 <li>
-                    <a href="https://www.quora.com/profile/Ubaid-Ahmad-12">
-                        <i class="fa-brands fa-quora"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://twitter.com/ubaida985">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/ubaida985">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://github.com/ubaida985">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-
-
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile" href="https://twitter.com/ubaida985">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" href="https://www.instagram.com/ubaida985_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
 
         </div>
 
-        <span>Created By <a href="https://www.github.com/ubaida985">ubaida985</a> | <span
-                class="far fa-copyright"></span> 2020 All rights reserved.
+        <span>Created By <a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://www.github.com/ubaida985">ubaida985</a> | <span
+                class="far fa-copyright"></span> 2026 All rights reserved.
         </span>
         <!-- ------------ AOS js Library  ------------------------- -->
-        <script>
-            document.getElementById("historySelect").addEventListener("change", function() {
-                const value = this.value;
-                document.querySelectorAll(".experience-group").forEach(el => {
-                    el.classList.remove("active");
-                    el.style.display = "none";
-                });
-                const target = document.querySelector("." + value);
-                if (target) {
-                    target.classList.add("active");
-                    target.style.display = "block";
-                }
-            });
-
-            // Default state
-            document.querySelectorAll(".experience-group").forEach(el => (el.style.display = "none"));
-            document.querySelector(".work").style.display = "block";
-        </script>
         <script src="./js/aos.js"></script>
         <script src="./js/main.js"></script>
 
 </body>
-
 </html>

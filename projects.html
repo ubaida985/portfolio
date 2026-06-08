@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects -Ubaid Ahmad</title>
+    <meta name="description" content="Projects by Ubaid Ahmad across Android, web, React, JavaScript, and WordPress development.">
+    <title>Projects - Ubaid Ahmad</title>
     <!-- ------------ AOS Library --------------------------->
     <link rel="stylesheet" href="./css/aos.css">
 
@@ -20,8 +21,7 @@
 
 
     <!-- ------------ FONTAWESOME --------------------------->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
 
@@ -31,6 +31,11 @@
 </head>
 
 <body>
+    <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
     <div data-aos="zoom-in" data-aos-delay="300" class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -41,8 +46,13 @@
             </div>
             <ul class="menu" data-aos="fade-left" data-aos-delay="300">
                 <li><a href="./index.html" class="menu-btn">Home</a></li>
+                <li><a href="./index.html#about" class="menu-btn">About</a></li>
+                <li><a href="./index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="./index.html#history" class="menu-btn">Experience</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="https://www.github.com/ubaida985">Github</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://www.github.com/ubaida985">Github</a></li>
+                <li><a href="./index.html#contact" class="menu-btn">Contact</a></li>
+                <li><button id="theme-toggle" class="menu-btn" style="background:none; border:none; color:inherit; cursor:pointer;"><i class="fas fa-moon"></i></button></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -51,127 +61,132 @@
     </nav>
 
 
-    <section class="projects" id="projects" data-aos="zoom-in" data-aos-delay="100">
+    <section class="projects" id="projects" data-aos="zoom-in" data-aos-delay="100" style="padding-top: 150px; min-height: 100vh; position: relative; overflow: hidden;">
+        <div class="bg-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
         <div class="max-width">
             <h2 class="title">
-                Projects</h2>
+                Early Explorations</h2>
             <h2 class="sub-title">
                 Android Projects</h2>
             <div class="serv-content">
                 <div class="card" data-aos="fade-down-right" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/Poke_A_Simple_Messenger">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Poke_A_Simple_Messenger">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/androidFirebase.gif" alt="">
+                                <img src="./img/androidFirebase.gif" alt="Android Firebase project preview">
                             </div>
                             <div class="text">
                                 Poke Messenger</div>
                             <p>
-                                An android application made using Java and Firebase that let's you chat with other users signed up on the application.</p>
+                                An Android application made using Java and Firebase that lets you chat with other users signed up on the application.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="zoom-in-down" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/News-Application">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/News-Application">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/androidREST.png" alt="">
+                                <img src="./img/androidREST.png" alt="Android REST API project preview">
                             </div>
                             <div class="text">
                                 News Application</div>
-                            <p>An android application made using Java and REST API that fetches news of different categories in real time and displays them.</p>
+                            <p>An Android application made using Java and REST API that fetches news of different categories in real time and displays them.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="fade-down-left" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/CalculatorApp">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/CalculatorApp">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Calculator</div>
-                            <p>An android application made using Java that uses infix to postfix conversion to perform scientific calculations.</p>
+                            <p>An Android application made using Java that uses infix to postfix conversion to perform scientific calculations.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/GuessCeleb">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/GuessCeleb">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Guess Celeb</div>
-                            <p>An android application made using Java that fetches data from a website in real time make a guessing game automatically.</p>
+                            <p>An Android application made using Java that fetches data from a website in real time to create a guessing game automatically.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/BrainTrainer">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/BrainTrainer">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Brain Trainer</div>
-                            <p>An android application made using Java that displays a calculation questions along with four options all questions are made on the fly.</p>
+                            <p>An Android application made using Java that displays calculation questions along with four options; all questions are made on the fly.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/Roulette">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Roulette">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Roulette</div>
-                            <p>An android application made using Java that helps you play the classic game "Russian Roulette" right in your mobile device.</p>
+                            <p>An Android application made using Java that helps you play the classic game "noughts and crosses" right in your mobile device.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="fade-up-right" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/ChickenTimer">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/ChickenTimer">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Timer Application</div>
-                            <p>An android application made using Java that uses ImageViews and sounds to set timers in your mobile device.</p>
+                            <p>An Android application made using Java that uses ImageViews and sounds to set timers in your mobile device.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="zoom-out-up" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/TicTacToe">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/TicTacToe">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Tic Tac Toe</div>
-                            <p>An android application made using Java that enables you to play a two player game of knot and crosses right in your mobile device.</p>
+                            <p>An Android application made using Java that enables you to play a two player game of noughts and crosses right in your mobile device.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card" data-aos="fade-up-left" data-aos-delay="300">
-                    <a target="_blank" href="https://github.com/ubaida985/News-Application">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/News-Application">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/android.jpg" alt="">
+                                <img src="./img/android.jpg" alt="Android project preview">
                             </div>
                             <div class="text">
                                 Speed</div>
-                            <p>An android application made using Java that uses webview and along with some other views to let you surf the internet.</p>
+                            <p>An Android application made using Java that uses WebView along with some other views to let you surf the internet.</p>
                         </div>
                     </a>
                 </div>
@@ -183,15 +198,15 @@
             <div class="serv-content">
 
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/E-Commerce">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/E-Commerce">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/fullweb.jpeg" alt="">
+                                <img src="./img/fullweb.jpeg" alt="Full-stack web project preview">
                             </div>
                             <div class="text">
                                 E-Commerce</div>
                             <p>
-                                A full stack E-commerce website made using HTML, SASS, JavaScript, php, mySQL along with some libraries including isotope, owlCarousel etc.</p>
+                                A full-stack E-commerce website made using HTML, SASS, JavaScript, PHP, MySQL along with some libraries including isotope, owlCarousel etc.</p>
                         </div>
                     </a>
                 </div>
@@ -202,23 +217,23 @@
             <div class="serv-content">
 
                 <div class="card" data-aos="fade-down-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/portfolio">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/portfolio">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Portfolio Website</div>
                             <p>
-                                A frontend website made using HTML, CSS, JavaScript and its libraries including JQuery, and AJAX libraries(My current portfolio website).</p>
+                                A frontend website made using HTML, CSS, JavaScript and its libraries including JQuery, and AJAX libraries.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="zoom-in-down" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Lakshya-2D">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Lakshya-2D">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Lakshya</div>
@@ -228,23 +243,23 @@
                     </a>
                 </div>
                 <div class="card" data-aos="fade-down-left" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/sciencebehindfitness">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/sciencebehindfitness">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Science Behind Fitness</div>
                             <p>
-                                A static website made as a template for creation of a dynamic wordpress template using wordpress specific php.</p>
+                                A static website made as a template for creation of a dynamic WordPress template using WordPress specific PHP.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/portfolioDesign">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/portfolioDesign">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Portfolio Website</div>
@@ -254,10 +269,10 @@
                     </a>
                 </div>
                 <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/University">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/University">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 University</div>
@@ -267,10 +282,10 @@
                     </a>
                 </div>
                 <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Counsello">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Counsello">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Counsello</div>
@@ -280,10 +295,10 @@
                     </a>
                 </div>
                 <div class="card" data-aos="fade-up-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Portfolio3.0">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Portfolio3.0">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Portfolio Website</div>
@@ -293,10 +308,10 @@
                     </a>
                 </div>
                 <div class="card" data-aos="zoom-out-up" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/GridGladiator">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/GridGladiator">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 Grid Gladiator</div>
@@ -307,10 +322,10 @@
                     </a>
                 </div>
                 <div class="card" data-aos="fade-up-left" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/FlexBoxFlex">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/FlexBoxFlex">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/web.png" alt="">
+                                <img src="./img/web.png" alt="Web project preview">
                             </div>
                             <div class="text">
                                 FlexBoxFlex</div>
@@ -324,45 +339,45 @@
 
 
             <h2 class="sub-title">
-                ReactJs Projects</h2>
+                ReactJS Projects</h2>
             <div class="serv-content">
 
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/YoutubeSearch">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/YoutubeSearch">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/ReactJs.png" alt="">
+                                <img src="./img/ReactJs.png" alt="React project preview">
                             </div>
                             <div class="text">
                                 Youtube Search</div>
                             <p>
-                                A reactjs project that fetches the query entered in the search bar in the youtube database using Youtube API and displays all the items that match.</p>
+                                A ReactJS project that fetches the query entered in the search bar in the youtube database using Youtube API and displays all the items that match.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/UnsplashSearch">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/UnsplashSearch">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/ReactJs.png" alt="">
+                                <img src="./img/ReactJs.png" alt="React project preview">
                             </div>
                             <div class="text">
                                 Unsplash Search</div>
                             <p>
-                                A reactjs project that fetches the query entered in the search bar in the Unsplash database using Unsplash API and displays the result.</p>
+                                A ReactJS project that fetches the query entered in the search bar in the Unsplash database using Unsplash API and displays the result.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/track-server">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/track-server">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/ReactJs.png" alt="">
+                                <img src="./img/ReactJs.png" alt="React project preview">
                             </div>
                             <div class="text">
                                 Track Server</div>
                             <p>
-                                A reactjs project to understand the working of MERN and how MongoDB, Express, React and NodeJs can be used together for a project.</p>
+                                A ReactJS project to understand the working of MERN and how MongoDB, Express, ReactJS and NodeJS can be used together for a project.</p>
                         </div>
                     </a>
                 </div>
@@ -373,66 +388,63 @@
             <div class="serv-content">
 
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Basic-Js-Projects/tree/quizapp">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Basic-Js-Projects/tree/quizapp">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/JavaScript.png" alt="">
+                                <img src="./img/JavaScript.png" alt="JavaScript project preview">
                             </div>
                             <div class="text">
                                 Quiz Application</div>
                             <p>
-                                This is a JavaScript Application that can be used to give students a Quiz.</p>
+                                This is a JavaScript application that can be used to give students a quiz.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Basic-Js-Projects/tree/newyearcountdown">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Basic-Js-Projects/tree/newyearcountdown">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/JavaScript.png" alt="">
+                                <img src="./img/JavaScript.png" alt="JavaScript project preview">
                             </div>
                             <div class="text">
                                 New Year Countdown</div>
                             <p>
-                                A JavaScript Application that displays the countdown until next year.</p>
+                                A JavaScript application that displays the countdown until next year.</p>
                         </div>
                     </a>
                 </div>
                 <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Basic-Js-Projects/tree/web-calculator">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Basic-Js-Projects/tree/web-calculator">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/JavaScript.png" alt="">
+                                <img src="./img/JavaScript.png" alt="JavaScript project preview">
                             </div>
                             <div class="text">
                                 Calculator Application</div>
                             <p>
-                                This is a JavaScript Application that can be used to perform basic calculations.</p>
+                                This is a JavaScript application that can be used to perform basic calculations.</p>
                         </div>
                     </a>
                 </div>
             </div>
             <h2 class="sub-title">
-                Wordpress Projects</h2>
+                WordPress Projects</h2>
             <div class="serv-content">
 
                 <div class="card" data-aos="fade-right" data-aos-delay="300">
-                    <a href="https://github.com/ubaida985/Wordpress-Theme-SBF-">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ubaida985/Wordpress-Theme-SBF-">
                         <div class="box">
                             <div class="card-img">
-                                <img src="./img/Wordpressphp.png" alt="">
+                                <img src="./img/Wordpressphp.png" alt="WordPress PHP project preview">
                             </div>
                             <div class="text">
-                                Wordpress Custom Theme</div>
+                                WordPress Custom Theme</div>
                             <p>
-                                This is a custom wordpress theme that can be used to as a template for a wordpress website. It uses wordpress custom php to make the website dynamic.</p>
+                                This is a custom WordPress theme that can be used to as a template for a WordPress website. It uses WordPress custom PHP to make the website dynamic.</p>
                         </div>
                     </a>
                 </div>
             </div>
-        </div>
-        </div>
-
         </div>
     </section>
 
@@ -440,50 +452,32 @@
     <footer id="connect">
         <h1>Social Links</h1>
         <div id="social-media-footer">
-
             <ul>
-
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=100040943000469">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com/ubaida985_/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/ubaida985">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/ubaida985">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
-
                 <li>
-                    <a href="https://www.quora.com/profile/Ubaid-Ahmad-12">
-                        <i class="fa-brands fa-quora"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://twitter.com/ubaida985">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/ubaida985">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://github.com/ubaida985">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile" href="https://twitter.com/ubaida985">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" href="https://www.instagram.com/ubaida985_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
-
         </div>
 
-        <span>Created By <a href="https://github.com/ubaida985">ubaida985</a> |
-			<span class="far fa-copyright"></span> 2020 All rights reserved.
+        <span>Created By <a target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" href="https://github.com/ubaida985">ubaida985</a> |
+			<span class="far fa-copyright"></span> 2026 All rights reserved.
         </span>
 
         <!-- ------------ AOS js Library ------------------------- -->
